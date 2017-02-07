@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			css-fun!
+		</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="transitions.css">
+		<link rel="stylesheet" type="text/css" href="transforms.css">
+		<link rel="stylesheet" type="text/css" href="forms.css">
+	</head>
+
+	<body>
+
+		<a href="https://www.google.com">Clicky</a>
+
+		<div class="ex">Transition property dependency</div>
+
+		<div class="wrap">
+			<div class="container">
+				<div id="d1" class="circle1 circle">1</div>
+			</div>
+			
+			<div class="container">
+				<div id="d2" class="circle2 circle">2</div>
+			</div>
+			<div class="container">
+				<div id="d3" class="circle3 circle">3</div>
+			</div>
+		</div>
+
+		<div class="transitions">
+			<div class="ball1 ball">linear</div>
+			<div class="ball2 ball">ease-in</div>
+			<div class="ball3 ball">ease</div>
+			<div class="ball4 ball">ease-out</div>
+			<div class="ball5 ball">ease-in-out</div>
+			<div class="ball6 ball">cubic-bezier</div>
+			<div class="ball7 ball">rotate</div>
+		</div>
+
+		<div class="transforms">
+			<div class="square">
+				<div class="scaleX green">scaleX</div>
+			</div>
+			<div class="square">
+				<div class="scaleY green">scaleY</div>
+			</div>
+			<div class="square">
+				<div class="scale green">scale</div>
+			</div>
+			<div class="square">
+				<div class="translateX green">translateX</div>
+			</div>
+			<div class="square">
+				<div class="translateY green">translateY</div>
+			</div>
+			<div class="square">
+				<div class="translate green">translate</div>
+			</div>
+			<div class="square">
+				<div class="matrix green">matrix</div>
+			</div>
+			<div class="square">
+				<div class="rotate green">rotate</div>
+			</div>
+			<div class="square">
+				<div class="skew green">skew</div>
+			</div>
+			<div class="square">
+				<div class="skewX green">skewX</div>
+			</div>
+			<div class="square">
+				<div class="skewY green">skewY</div>
+			</div>
+			<div class="square">
+				<div class="matrix3d green">matrix3d</div>
+			</div>
+			<div class="square">
+				<div class="translate3d green">translate3d</div>
+			</div>
+			<div class="square">
+				<div class="rotateY green">rotateY</div>
+			</div>
+			<div class="square">
+				<div class="rotateX green">rotateX</div>
+			</div>
+			<div class="square">
+				<div class="translateZ green">translateZ</div>
+			</div>
+		</div>
+
+		<div class="spin-master">
+  		<input type="checkbox" id="spinner-form" />
+  		
+  		<label for="spinner-form" class="spinner-spin">
+    		<div class="spinner diagonal part-1"></div>
+    		<div class="spinner horizontal"></div>
+    		<div class="spinner diagonal part-2"></div>
+  		</label>
+		</div>
+
+
+		<script
+	  	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  	crossorigin="anonymous">
+  	</script>
+  	<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,79 @@
+.spin-master * {
+	transition: all 0.3s;
+	box-sizing: border-box;
+}
+
+.spin-master {
+	position: relative;
+	margin: 50px auto;
+	height: 50px;
+	width: 50px;
+}
+
+.spin-master input[type=checkbox] {
+	display: none;
+}
+
+.spin-master label {
+	cursor: pointer;
+	position: absolute;
+	z-index: 99;
+	height: 100%;
+	width: 100%;
+	top: 10px;
+	left: 0;
+}
+
+.spin-master .spinner {
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background-color: orange;
+	box-shadow: 0 3px 0 rbga(0, 0, 0, 0.1);
+}
+
+.spin-master .diagonal.part-1 {
+	position: relative;
+	float: left;
+}
+
+.spin-master .horizontal {
+	position: relative;
+	float: left;
+	margin-top: 6px;
+}
+
+.spin-master .diagonal.part-2 {
+	position: relative;
+	float: left;
+	margin-top: 6px;
+}
+
+.spin-master
+input[type=checkbox]:checked ~
+.spinner-spin > .horizontal {
+	opacity: 0;
+}
+
+.spin-master
+input[type=checkbox]:checked ~
+.spinner-spin > .diagonal.part-1 {
+	transform: rotate(405deg);
+}
+
+.spin-master
+input[type=checkbox]:checked ~
+.spinner-spin > .diagonal.part-2 {
+	transform: rotate(-405deg);
+	margin-top: -16px;
+}
+
+
+
+
+
+
+
+
+
+

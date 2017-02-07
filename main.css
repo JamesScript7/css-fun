@@ -1,0 +1,76 @@
+body {
+	font-size: 3rem;
+	font-family: sans-serif;
+}
+
+/*Exercise 1*/
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	color: #777777;
+	transition: all ease-in-out .3s;
+}
+
+.ex {
+	color: #000000;
+	padding:10px;
+	transition: background-color .2s ease-in;
+	background-color: #EEE;
+}
+
+.ex:hover {
+	color: #FFF;
+	background-color: #f53232;
+}
+
+.wrap {
+	margin: 0px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.container {
+	display: inline-block;
+	width: 33%;
+}
+.circle {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 40px auto;
+	text-align: center;
+	background: #3EA69B;
+}
+.wrap:hover .circle {
+	transform: scale(2);
+}
+.circle1 {
+	transition: all 300ms;
+}
+.circle2 {
+	transition: all 500ms;
+}
+.circle3 {
+	transition: all 1s;
+}
+
+#d1 {transition-delay: 0.1s;}
+#d2 {transition-delay: 0.2s;}
+#d3 {transition-delay: 0.3s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

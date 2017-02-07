@@ -1,0 +1,49 @@
+/*Exercise 2*/
+
+.transitions {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.ball {
+	border-radius: 50%;
+	font-size: .5em;
+	height: 100px;
+	width: 100px;
+	margin: 50px auto;
+	background: url(http://www.svgrepo.com/show/7891/ufo.svg);
+}
+
+.ball:hover {
+	color: green;
+	transform: scale(2);
+}
+
+.ball1 {
+	transition: all 1.4s linear;
+}
+.ball2 {
+	transition: all 1.4s ease-in;
+}
+.ball3 {
+	transition: all 1.4s ease;
+}
+.ball4 {
+	transition: all 1.4s ease-out;
+}
+.ball5 {
+	transition: all 1.4s ease-in-out;
+}
+.ball6 {
+	transition: all 1.4s cubic-bezier(1.000, -0.530, 0.405, 1.425);
+}
+.ball7 {
+	transition:all 1.4s;
+}
+.active {
+	color: blue;
+}
+.active:hover {
+	color: red;
+	transform: rotate(720deg);
+}
