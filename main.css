@@ -64,12 +64,14 @@ a:hover {
 
 /*Fun with filter effects!*/
 
-/*	opacity: .50;*/
+	/*background-blend-mode: lighten;*/
+  /*opacity: .50;*/
 
 .div-body {
-	background-image: url("http://codewelt.com/data/thumbs-view/Linus-Cgfx_semi-texture.png-thumb-view");
+	background-image: linear-gradient(to right, #000000 0%,#ffffff 100%), url("http://codewelt.com/data/thumbs-view/Linus-Cgfx_semi-texture.png-thumb-view");
 	background-color: red;
-	width: 200px;
+	width: 300px;
+	background-blend-mode: difference, normal;
 }
 
 .fry {
@@ -79,7 +81,7 @@ a:hover {
 }
 
 .fry img {
-	mix-blend-mode: overlay;
+	mix-blend-mode: multiply;
 }
 
 
